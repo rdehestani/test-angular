@@ -1,0 +1,72 @@
+<div class="box">
+  <form [formGroup] = "userForm">
+    <div class = "mt-5">
+      <div class = "form-row">
+
+        <div class = "col-md-12">
+          <div class = "form-group">
+            <label class="labels">نام: </label>
+          </div>
+          <div class = "form-row">
+            <div class = "col">
+              <input type="text" formControlName="name" class="inputs form-control" placeholder="نام خود را وارد نمایید">
+            </div>
+          </div>
+        </div>
+
+          <div class = "col-md-12">
+            <div class = "form-group">
+              <label class="labels">موبایل: </label>
+            </div>
+            <div class = "form-row">
+              <div class = "col">
+                <input type="text" formControlName="mobile" class="inputs form-control" placeholder="موبایل خود را وارد کنید">
+              </div>
+            </div>
+          </div>
+
+
+            <div class = "col-md-12">
+              <div class = "form-group">
+                <label class="labels">سن: </label>
+              </div>
+              <div class = "form-row">
+                <div class = "col">
+                  <input type="text" formControlName="age" class="inputs form-control" placeholder="سن خود را وارد نمایید">
+                </div>
+              </div>
+            </div>
+
+          <br>
+
+            <div class="form-row mt-4">
+              <div class="col-6">
+                <button type="button" class="btn btn-primary" (click)="AddItem()">اضافه کردن</button> &nbsp;
+                <button type="button" class="btn btn-primary" (click)="Reset()">پاک کردن</button>
+              </div>
+            </div>
+      </div>
+    </div>
+  </form>
+  <br>
+  <div class="col-md-8 mt-4 mb-4">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>نام</th>
+          <th>موبایل</th>
+          <th>سن</th>
+          <th>عملیات</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of listData">
+          <td><span>{{ item.name }}</span></td>
+          <td><span>{{ item.mobile }}</span></td>
+          <td><span>{{ item.age }}</span></td>
+          <td><span><button type="button" class="btn btn-primary" (click)="removeItem(item)">حذف</button></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

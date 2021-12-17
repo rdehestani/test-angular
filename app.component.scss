@@ -1,0 +1,39 @@
+.box {
+    direction: rtl;
+    width: 50%;
+    border: 1px solid rgb(145, 138, 138);
+    border-radius: 25px;
+    padding: 0px 20px 20px 20px;
+    margin-left: 400px;
+    text-align: right;
+}
+
+table, tr {
+    text-align: center;
+    border: 1px solid rgb(68, 0, 255);
+    border-radius: 5px;
+    width: 100%;
+};
+
+th {
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+};
+
+.inputs {
+    width: 100%;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+};
+
+.labels {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    color: green;
+};
+
+.btn{
+    font-size: smaller;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+};
